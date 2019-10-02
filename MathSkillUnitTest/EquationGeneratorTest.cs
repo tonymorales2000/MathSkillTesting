@@ -15,5 +15,11 @@ namespace MathSkillUnitTest
             Assert.IsFalse(EquationGenerator.IsValidEquation("1 / 0"));
             Assert.IsFalse(EquationGenerator.IsValidEquation(float.MinValue + " -" + 9.985e307));
         }
+        [Test]
+        public void GetRandomOperatorListTest()
+        {
+           Assert.IsTrue(  EquationGenerator.GetRandomOperatorList(5).Count == 5);
+           Assert.IsTrue(EquationGenerator.GetRandomOperatorList(10).Count == 10);
+        }
     }
 }
