@@ -18,8 +18,23 @@ namespace MathSkillUnitTest
         [Test]
         public void GetRandomOperatorListTest()
         {
+        
            Assert.IsTrue(  EquationGenerator.GetRandomOperatorList(5).Count == 5);
            Assert.IsTrue(EquationGenerator.GetRandomOperatorList(10).Count == 10);
+
+        }
+
+        [Test]
+        public void MathEquationGeneratorTest()
+        {
+            var str = EquationGenerator.GenerateMathTest();
+            System.Diagnostics.Debug.WriteLine(str);
+            str = EquationGenerator.GenerateMathTest();
+            System.Diagnostics.Debug.WriteLine(str);
+            str = EquationGenerator.GenerateMathTest();
+            System.Diagnostics.Debug.WriteLine(str);
+           
+
         }
     }
 }

@@ -10,8 +10,18 @@ namespace MathTestGenerator
         public static string GenerateMathTest()
         {
             //get random number of operator
+            var numberOfOperator = GetRandomNumberOfOperator();
+            var operatorList = GetRandomOperatorList((int)numberOfOperator);
+            StringBuilder str = new StringBuilder();
+            foreach(var mathOp in operatorList){
+                str.Append(GetRandomEquationNumber());
+                str.Append(" ");
+                str.Append(mathOp);
+                str.Append(" ");
+            }
+            str.Append(GetRandomEquationNumber());
 
-            return "";
+            return str.ToString();
         }
 
 
@@ -19,21 +29,18 @@ namespace MathTestGenerator
         {
             IDictionary<int, string> operatorList = new Dictionary<int, string>();
 
-            operatorList.Add(1, "+");
-            operatorList.Add(2, "-");
-            operatorList.Add(3, "*");
-            operatorList.Add(4, "/");
+            operatorList.Add(0, "+");
+            operatorList.Add(1, "-");
+            operatorList.Add(2, "*");
+            operatorList.Add(3, "/");
 
             IList<string> returnOperatorList = new List<string>();
-
-
-            var set = new HashSet<int>();
-            var nums = new List<int>();
+            
             Random random = new Random();
             
             while (returnOperatorList.Count < count)
             {
-                int num = random.Next(1, count);
+                int num = random.Next(0, 4);
                 returnOperatorList.Add(operatorList[num]);
                 
             }
@@ -45,14 +52,26 @@ namespace MathTestGenerator
 
         }
 
-        public static int GetRandomNumberOfOperator()
+        public static double GetRandomNumberOfOperator()
         {
-           
-            Random random = new Random();
-            var numberOfOperator = random.Next(1, 10);
+            var numberOfOperator = GetRandomNumber(2, 11);
             return numberOfOperator;
+        }
+
+        public static double GetRandomEquationNumber()
+        {
+            var numberOfOperator = GetRandomNumber(-1000, 1001);
+            return numberOfOperator;
+        }
+
+        public static double GetRandomNumber(int rangeFrom, int rangeTo)
+        {
+            Random random = new Random();
+            var randomNumber = random.Next(rangeFrom, rangeTo);
+            return randomNumber;
 
         }
+
         public static bool IsValidEquation(string mathString)
         {
             bool isValid = EvaluateExpression(mathString); ;
