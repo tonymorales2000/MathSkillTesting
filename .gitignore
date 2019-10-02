@@ -5,3 +5,7 @@ MathSkillUnitTest/obj/*
 MathSkillUnitTest/bin/*
 MathEquationApi/obj/*
 MathEquationApi/bin/*
+MathProblemApi/bin/*
+MathProblemApi/obj/*
+MathTestApi/bin/*
+MathTestApi/obj/*

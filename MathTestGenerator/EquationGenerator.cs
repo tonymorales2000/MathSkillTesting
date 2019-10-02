@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 
 namespace MathTestGenerator
@@ -17,5 +18,16 @@ namespace MathTestGenerator
 
             return isValid;
         }
+
+        private static bool EvaluateExpression(string mathString)
+        {
+            DataTable dt = new DataTable();
+            
+            var answer = dt.Compute(mathString, "").ToString();
+            var isValid = decimal.TryParse(answer, out decimal _);
+            return isValid;
+        }
+
+       
     }
 }
