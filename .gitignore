@@ -1,0 +1,7 @@
+
+MathTestGenerator/obj/*
+MathTestGenerator/bin/*
+MathSkillUnitTest/obj/*
+MathSkillUnitTest/bin/*
+MathEquationApi/obj/*
+MathEquationApi/bin/*
