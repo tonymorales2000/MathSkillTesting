@@ -12,6 +12,8 @@ namespace MathSkillUnitTest
         public void EquationIsValidTest()
         {
             Assert.IsTrue( EquationGenerator.IsValidEquation("1 + 2"));
+            Assert.IsFalse(EquationGenerator.IsValidEquation("1 / 0"));
+            Assert.IsFalse(EquationGenerator.IsValidEquation(float.MinValue + " -" + 9.985e307));
         }
     }
 }

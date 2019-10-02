@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MathEquationApi\MathTestProvider.csproj" />
     <ProjectReference Include="..\MathTestGenerator\MathTestGenerator.csproj" />
   </ItemGroup>
 
