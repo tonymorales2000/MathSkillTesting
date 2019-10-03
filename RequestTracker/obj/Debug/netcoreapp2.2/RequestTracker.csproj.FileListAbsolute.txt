@@ -1,0 +1,9 @@
+C:\develop\MathSkillTesting\RequestTracker\bin\Debug\netcoreapp2.2\RequestTracker.deps.json
+C:\develop\MathSkillTesting\RequestTracker\bin\Debug\netcoreapp2.2\RequestTracker.dll
+C:\develop\MathSkillTesting\RequestTracker\bin\Debug\netcoreapp2.2\RequestTracker.pdb
+C:\develop\MathSkillTesting\RequestTracker\obj\Debug\netcoreapp2.2\RequestTracker.csproj.CoreCompileInputs.cache
+C:\develop\MathSkillTesting\RequestTracker\obj\Debug\netcoreapp2.2\RequestTracker.AssemblyInfoInputs.cache
+C:\develop\MathSkillTesting\RequestTracker\obj\Debug\netcoreapp2.2\RequestTracker.AssemblyInfo.cs
+C:\develop\MathSkillTesting\RequestTracker\obj\Debug\netcoreapp2.2\RequestTracker.dll
+C:\develop\MathSkillTesting\RequestTracker\obj\Debug\netcoreapp2.2\RequestTracker.pdb
+C:\develop\MathSkillTesting\RequestTracker\obj\Debug\netcoreapp2.2\RequestTracker.csprojAssemblyReference.cache
