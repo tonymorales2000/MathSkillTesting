@@ -7,3 +7,8 @@ For example, http://your-url/api/math should generate a json response (such as 1
 If I refresh the page it should still provide the same json response. After 2 minutes (or less if the initial request was between the two minutes)  a new equation will be generated from the same url.
 
 The number of operators can be between 1 and 10. Numbers should be in the range from -1000 to 1000 (including 0) and equation should be valid.
+
+Additional Info: It is a simple math skill testing problems that you normally see in lottery tickets and the like. As for the json:
+
+Expected Result:
+{“problem”:”23+123/4”}.  
